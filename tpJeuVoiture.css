@@ -1,0 +1,91 @@
+#jeu{
+  width: 400px;
+  height: 460px;
+  border: 7px black solid;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+p{
+  margin-bottom: 0;
+  margin-left: 20%;
+  color: black;
+  font-weight: bold;
+  display: none;
+}
+span{
+  color: lightgray;
+}
+.fond{
+  margin-bottom:-5px;
+  z-index: 10;
+  position: relative;
+}
+#vr{
+  z-index: 80; /* 100 */
+  position: absolute;
+  top: 0px;    /* 10 */
+  left: 158px;
+}
+#vj{
+  z-index: 100; /* 80 */
+  position: absolute;
+  top: 300px;  /* 200 */
+  left: 48px;
+}
+#container {
+    margin-left: 29%;
+}
+body {
+    background: linear-gradient(45deg, black, rgb(239, 133, 70), black);
+}
+
+#backgroundPoster {
+  z-index: 150;
+  border: 7px yellow dashed;
+  border-radius: 12px;
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  top: 68px;
+  left: 290px;
+}
+#startRace {
+  z-index: 200;
+  position: absolute;
+  top: 175px;
+  left: 400px;
+  width: 250px;
+}
+#trou  {
+  z-index: 70;
+  position: absolute;
+  top: 10px;
+  left: 285px;
+  display: none;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    #container {
+        margin-left: 0%;
+    }
+    p {
+        margin-left: 40%;
+    }
+    #backgroundPoster {
+      width: 400px;
+      height: 300px;
+
+      top: 68px;
+      left: 20px;
+    }
+    #startRace {
+      top: 175px;
+      left: 110px;
+      width: 250px;
+    }
+
+}

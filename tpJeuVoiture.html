@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "tpJeuVoiture.css">
+        <title>Mini Jeu de Voitures</title>
+    </head>
+    <body>
+        <div id = "container">
+            <p>Crashes : <span id="info">0</span></p>
+            <div id="jeu">
+                <img id="fond1" class="fond" src="route.png">
+                <img id="fond2" class="fond" src="route.png">
+                <img id="fond3" class="fond" src="route.png">
+                <img id="vr" src="vr.png"> <!-- La voiture rouge -->
+                <img id="vj" src="vj.png"> <!-- La voiture jaune -->
+                <img id="trou" src="trou.png"> <!-- Le trou -->
+            </div>
+            <div id = "poster">
+                <img id = "backgroundPoster" src = "backgroundPoster.png" />
+                <a href = "" title = "cliquez pour commencer le jeu"><img id = "startRace" src = "startRace.png" /></a>
+            </div>
+            <audio preload="auto" id="crashSound">
+                <source src="beep.mp3" type="audio/mp3">
+                <source src="beep.ogg" type="audio/ogg">
+            </audio>
+            <audio preload="auto" id="fzer_opening">
+                <source src="fzer_opening.mp3" type="audio/mp3">
+            </audio>
+            <audio preload="auto" id="fzeroStart">
+                <source src="fzero_start.mp3" type="audio/mp3">
+            </audio>
+            <audio preload="auto" id="fzeroBackground_first">
+                <source src="fzero_muteCity.mp3" type="audio/mp3">
+            </audio>
+            <audio preload="auto" id="fzeroBackground_second">
+                <source src="fzero_bigBlue.mp3" type="audio/mp3">
+            </audio>
+            <audio preload="auto" id="gameOver">
+                <source src="fzero_gameOver.mp3" type="audio/mp3">
+            </audio>
+
+        </div>
+        <script src = "../jquery-3.2.1.min.js"></script>
+        <script type = "text/javascript" src = "tpJeuVoiture.js"></script>
+    <body>
+</html>
